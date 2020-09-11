@@ -1,0 +1,120 @@
+html,body{
+	padding, margin:0;
+}
+.main {
+	width: 100%;
+	min-height: 900px;
+	font-family: Arial;
+	font-size: 16px;
+    line-height: 20px; 
+    padding: 0px;
+ /*    display: flex;
+ flex-flow: column wrap;
+ justify-content: space-between; */
+    background-image: url("../img/bg.jpg");
+}
+.maucam{
+	color: #E6A756;
+}
+.maunau{
+background-color: rgba(47,23,15,0.9);
+}
+header li.nav-item{
+	margin-left: 25px;
+    padding: 0;
+
+}
+header a.nav-link{
+	font-weight: bold;
+	font-size: 18px;
+	color: white !important; 
+	
+}
+header li.active>a.nav-link{
+	color: #E6A756 !important;
+}
+
+header a.nav-link:hover{
+	color: #E6A756!important;
+}
+li{
+	text-align: center;
+}
+.chinhgiua{
+	position: relative;
+	left:35%;
+}
+#small-banner{
+
+	height: 400px;
+	position: relative;
+}
+#small-banner>img{
+	height: 100%;
+}
+.box{
+	height: 200px;
+	width:60%;
+	background-color: white;
+	opacity: 0.85;
+	color: black;
+	margin-left: 250px;
+	position: absolute;
+	bottom: -150px;
+}
+footer {
+    background: rgba(47,23,15,0.9);
+    padding: 20px;
+}
+/* het index */
+/* cau2 */
+#form{
+	background-color: #E6A756;
+	height: 600px;
+	position: relative;
+}
+.bangnho{
+	background-color: white;
+	opacity: 0.8;
+	position: absolute;
+	top:20px;
+	left: 20px;
+	width: 80%;
+	height: 80%;
+	border:2px solid #E6A756;
+}
+.nd_form>input,textarea{
+	background-color: pink!important;
+	opacity: 1!important;
+}
+.nut{
+	background-color: #E6A756;
+}
+/* hết câu 2 */
+/* câu 3 */
+.hinhnho{
+	width: 500px;
+	height: 500px;
+	position: relative;
+}
+.boxtrai{
+	background-color: white !important;
+	opacity: 1;
+	color: black;
+	display: inline-block;
+	position: absolute;
+	top:-20px;
+	left: -10px;
+	z-index: 1;
+
+}
+.boxphai{
+	background-color: white !important;
+	opacity: 1;
+	color: black;
+	display: inline-block;
+	position: absolute;
+	top:-20px;
+	z-index: 1;
+	right: 10px;
+}
