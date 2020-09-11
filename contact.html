@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Best Farm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script><!-- mới thêm dòng script này nè -->
+    <link href="https://fonts.googleapis.com/css?family=Changa+One:400,400i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--   <link rel="shorcut icon" href="images/favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="css/1888180.css">
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-inverse">
+                    <div class="container">
+                        <a class="navbar-brand col-1" href="index.html">
+                            <p class="logo">Lap trinh Web 1</p>
+                        </a>
+                        <button class="navbar-toggler hidden-sm-up float-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="nav navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="1888180.html">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="1888180.html">Team</a>
+                                </li>
+                                <li class="nav-item  active">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav> <!-- hết navbar -->
+            </div>
+        </header> <!-- hết header -->
+        <div class="container-fluid text-center">
+            <div>
+                <h1 class="text-white my-3">Contact Us</h1>
+                <p class="text-white my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <form>
+                <div class="row ">
+                    <div class="col-6 p-3  nd_form">
+                        <input type="text" class="form-control p-3 m-3" placeholder="Name" required />
+                        <input type="email" class="form-control m-3" placeholder="email" required pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$' oninput="this.setCustomValidity('')" oninvalid="this.setCustomValidity('Please enter an email address')" />
+                        <input type="tel" class="form-control m-3" placeholder="Phone" required />
+                    </div>
+                    <div class="col-6 text-center">
+                        <<textarea rows="5" type="text" class="form-control m-2" id="comments" name="comments" placeholder="Message" required></textarea>
+                    </div>
+                    <input class="mb-5" type="submit" value="SEND MESSAGE" id="send">
+                </div>
+            </form>
+        </div>
+        <footer class="container-fluid text-center">
+            <div>
+                <small class="text-dark">Copyright © 2019 by 1888180- Lữ Thị Thùy Trang</small>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

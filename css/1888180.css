@@ -1,0 +1,87 @@
+html,body{
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+	width: 100%;
+	min-height: 100vh !important;
+	font-family: Arial;
+	font-size: 16px;
+    line-height: 20px;
+    color: black;
+    background-color: black; 
+    padding: 0px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.logo{
+	color: #FED136;
+}
+
+header li.nav-item{
+	margin-left: 25px;
+    padding: 0;
+
+}
+header a.nav-link{
+	font-weight: bold;
+	font-size: 18px;
+	color: white !important; 
+	
+}
+header li.active>a.nav-link{
+	color: #2FA0D5!important;
+}
+
+header a.nav-link:hover{
+	color: #2FA0D5!important;
+}
+#small-banner{
+	background-image: url("../img/header-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover; 
+	padding: 0.25em;
+	min-height: 600px;
+	position: relative;
+	width: 100%;
+  	background-position: center;
+}
+.noidung>h2{
+	
+	font-weight: bold;
+}
+.noidung>h1{
+	
+	font-weight: bold;
+}
+.noidung>a{
+	display: inline-block;
+	background-color: #FED136;
+	padding:5px;
+	color: white;
+	padding:10px;
+}
+.noidung{
+	min-height: 200px;
+	width: 50%;
+	position: absolute;
+	top:30%;
+	left: 30%;
+}
+/* phần footer */
+footer {
+    background: white;
+    padding: 20px;
+}
+#send{
+	position: relative;
+	left: 50%;
+	background-color: yellow;
+	padding: 15px 10px;
+}
+/* hết trang index */
+/* trang contact */
+

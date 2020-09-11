@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Best Farm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Changa+One:400,400i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/1888180.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-inverse">
+                <div class="container">
+                    <a class="navbar-brand col-1" href="index.html">
+                        <b class="logo">Lap trinh Web 1</b>
+                    </a>
+                    <button class="navbar-toggler hidden-sm-up float-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="1888180.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="1888180.html">Team</a>
+                            </li>
+                            <li class="nav-item  active">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav> <!-- hết navbar -->
+        </div>
+    </header> <!-- hết header -->
+    <div class="about text-center">
+        <div id="getPortfolioById">
+            <h3 class="text-dark"> CONTACT US</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, et.</p>
+            <div class="row" id="getAllPortfolio">
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid text-center">
+        <small class="text-white">Copyright © 2019 by 1888180- Lữ Thị Thùy Trang</small>
+    </footer>
+    <script type="text/javascript" src="vendor/jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="vendor/popper/popper.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/handlebarjs/handlebars-v4.4.3.js"></script>
+    <script type="text/javascript" src="vendor/data.js"></script>
+    <script id="AllPortfolio" type="text/x-handlebars-template">
+        {{#each data}}
+       <div class="col-md-4 text-center">
+           <a href="#" onclick="loaddetail({{id}})"><img src="{{imagepath}}" alt=""></a>
+           <p class="text-dark">{{title}}</p>
+            <i class="text-dark">{{summary}}</i>
+        </div>
+        {{/each}}
+    </script> <!-- cua 3 hinh chinh -->
+    <script id="details-template" type="text/x-handlebars-template">
+        {{#each data}}
+         <div class="container py-5">
+            <h1 class=" my-3">{{title}}</h1>
+         <i class=" my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</i>
+             <div class="row py-3">
+                <div class="col-5"><img src="{{imagepath}}" alt="" class="round-img pull-left"></div>
+                 
+                <div class="col-7">{{{description}}}</div>
+            </div>
+        </div>
+         {{/each}}
+         
+    </script> <!-- cua chi tiet -->
+    <script>
+    $(document).ready(getAllPortfolio());
+    </script>
+    <script>
+    let jsonData = {
+        data: getAllPortfolio()
+    };
+    let target = $("#getAllPortfolio");
+    let source = $("#AllPortfolio").html();
+    let template = Handlebars.compile(source);
+    $(target).html(template(jsonData));
+    </script>
+     <script>
+    function loaddetail(id) {
+        let json1Data = {
+            data: getPortfolioById(id)
+        };
+        let target = $("#getPortfolioById");
+        let source = $("#details-template").html();
+        let template = Handlebars.compile(source);
+        $(target).html(template(json1Data));
+    }
+    </script>
+</body>
+
+</html>
