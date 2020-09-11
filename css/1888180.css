@@ -1,0 +1,70 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	font-family: Arial;
+	font-size: 16px;
+    line-height: 20px;
+    color: black;
+    background-color: white;
+    padding: 0px;
+    margin: 0px:;
+}
+header{
+	background-color: #F8A640;
+}
+header li.nav-item{
+	margin-left: 25px;
+    padding: 0;
+
+}
+header a.nav-link{
+	font-weight: bold;
+	font-size: 18px;
+	color: white !important; 
+	
+}
+#small-banner{
+	background-image: url("../images/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover; 
+	padding: 0.25em;
+	min-height: 600px;
+	position: relative;
+	width: 100%;
+  	background-position: center;
+}
+.noidung{
+	min-height: 200px;
+	width: 50%;
+	position: absolute;
+	top:30%;
+	left: 50px;
+}
+.noidung>h2{
+	color: #F8A640;
+	font-weight: bold;
+}
+.noidung>h1{
+	color: #F6A1B6;
+	font-weight: bold;
+}
+.noidung>button{
+	background-color: #F8A640;
+	color: white;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+/* phần footer */
+footer {
+    background: black;
+    padding: 20px;
+}
+/* hết trang index */
+/* trang contact */
+.nd_form{
+background-color: #F8A640;
+}
+.contact{
+line-height: 35px;
+}

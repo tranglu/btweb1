@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Best Farm</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+   <!--  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>mới thêm dòng script này nè   -->
+    <link href="https://fonts.googleapis.com/css?family=Changa+One:400,400i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--   <link rel="shorcut icon" href="images/favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="css/1888180.css">
+</head>
+<body>
+	<header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-inverse">
+                <div class="container">
+                    <a class="navbar-brand logo col-1 text-white" href="index.html">
+                        Best Farm
+                    </a>
+                    <button class="navbar-toggler hidden-sm-up float-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                           
+                            <li class="nav-item">
+                                <a class="nav-link" href="Gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item  active">
+                                <a class="nav-link" href="1888180.html">Contact</a>
+                            </li>
+                        </ul>                
+                    </div>
+                </div>
+            </nav> <!-- hết navbar -->
+        </div>
+    </header> <!-- hết header -->
+    <div class="about text-center">
+        <h3 style="color: #F8A640"> Our Gallery</h3>
+        <h2 style="font-weight: bold;">What a Special</h2>
+            <div class="row" id="getGalleryImages">
+            </div>
+    </div>
+    <footer class="container-fluid text-center">
+        <small class="text-white">Copyright © 2019 by 1888180- Lữ Thị Thùy Trang</small>
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/handlebars-v4.1.0.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script id="gallery" type="text/x-handlebars-template">
+        {{#each data}}
+       <div class="col-md-4">
+           <img class="mx-5 my-2 img-fluid" src="{{imagepath}}" alt="">
+        </div>
+        {{/each}}
+    </script>
+     <script>
+      $(document).ready(getGalleryImages()
+      );
+    </script>
+    <script>
+        let jsonData={
+                        data:getGalleryImages()
+                    };
+                    let target=$("#getGalleryImages");
+                    let source=$("#gallery").html();
+                    let template = Handlebars.compile(source);
+                    $(target).html(template(jsonData));
+    </script>
+</body>
+</html>

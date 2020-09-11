@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Best Farm</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Changa+One:400,400i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/1888180.css">
+</head>
+<body>
+	<header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-inverse">
+                <div class="container">
+                    <a class="navbar-brand logo col-1 text-white" href="index.html">
+                        Best Farm
+                    </a>
+                    <button class="navbar-toggler hidden-sm-up float-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                           
+                            <li class="nav-item">
+                                <a class="nav-link" href="Gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item  active">
+                                <a class="nav-link" href="1888180.html">Contact</a>
+                            </li>
+                        </ul>                
+                    </div>
+                </div>
+            </nav> <!-- hết navbar -->
+        </div>
+    </header> <!-- hết header -->
+        <div class="container-fluid">
+            <div class="row">
+                 <img src="images/map.png" class="img-fluid my-4"/>
+                <div class="col-6 p-3 nd_form">
+                    <form>
+                    <input type="text" class="form-control m-2" placeholder="Name" required />
+                    <input type="email" class="form-control m-2" placeholder="email" required pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$' oninput="this.setCustomValidity('')" oninvalid="this.setCustomValidity('Please enter an email address')"/>
+                    <input type="tel" class="form-control m-2" placeholder="Phone" required />
+                    <textarea type="text"class="form-control m-2" id="comments" name="comments" placeholder="Message" required></textarea>
+                    <input type="submit" value="Send" class="bg-dark text-white m-2">
+                    </form>
+                </div>
+                <div class="col-6 text-center contact my-auto">
+                    <h4 style="color: #F8A640">Contact us</h4>
+                    <h3>Get in Touch</h3>
+                    <span style="color: #F6A1B6">My name: </span> Lữ Thị Thùy Trang </br>
+                    <span style="color: #F6A1B6">Phone: </span> 038 75 72 601 </br>
+                    <span style="color: #F6A1B6">Email: </span> lu.t.t.trang@gmail.com</br>
+                </div>              
+            </div>
+        </div>
+    <footer class="container-fluid text-center">
+        <small class="text-white">Copyright © 2019 by 1888180- Lữ Thị Thùy Trang</small>
+    </footer>
+</body>
+</html>
